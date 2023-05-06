@@ -19,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: auto;
 }
 
 .title {
@@ -26,9 +27,9 @@
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
-    line-height: 30%;
+    line-height: 80%;
     text-align: center;
-    letter-spacing: -0.5px;
+    /* letter-spacing: -0.5px; */
     color: #fafafa;
 }
 
@@ -40,4 +41,25 @@
     text-align: center;
     letter-spacing: -0.5px;
     color: #fafafa;
+}
+
+
+@media screen and (max-width: 770px) {
+    .title {
+        font-size: 45px;
+    }
+
+    .image {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .subtitle {
+        font-size: 25px;
+    }
+
+    .image {
+        max-width: 300px;
+    }
 }

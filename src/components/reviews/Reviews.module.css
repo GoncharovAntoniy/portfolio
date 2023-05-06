@@ -14,3 +14,17 @@
     height: max-content;
     border-radius: 15px;
 }
+
+.swiper_BP {
+    display: none;
+}
+
+@media screen and (max-width: 770px) {
+    .swiper {
+        display: none;
+    }
+    .swiper_BP {
+        display: block;
+        padding: 15px;
+    }
+}

@@ -35,3 +35,16 @@
     font-weight: 600;
     font-family: cursive;
 }
+
+@media screen and (max-width: 520px) {
+    .image {
+        min-width: none;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .image {
+        max-width: 300px;
+    }
+}
