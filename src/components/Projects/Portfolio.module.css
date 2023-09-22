@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    max-width: 500px;
+}
+
+.image {
+    max-width: 500px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px black  ;
+}
+
+.portfolio_link {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gihub {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+@media screen and (max-width: 520px) {
+    .image {
+        min-width: none;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .image {
+        max-width: 300px;
+    }
+}
