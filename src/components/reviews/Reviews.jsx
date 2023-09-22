@@ -19,7 +19,7 @@ const Reviews = () => {
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={3}
-        centeredSlides={true}
+        centeredSlides={false}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => swiper}
         className={s.swiper}>

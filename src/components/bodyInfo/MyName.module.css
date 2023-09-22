@@ -11,8 +11,9 @@
 
 .image {
     position: absolute;
-    background-position: center center;
+    background-position: cover;
 }
+
 
 .infoTitle {
     display: flex;
@@ -21,6 +22,7 @@
     justify-content: center;
     height: auto;
 }
+
 
 .title {
     font-family: "DM Sans";
@@ -31,6 +33,41 @@
     text-align: center;
     /* letter-spacing: -0.5px; */
     color: #fafafa;
+
+    background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+      background-position: -200%;
+    }
+  }
+
+.button_animate {
+    z-index: 999;
+    background-color: inherit;
+    color: white;
+    box-shadow: 0 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.button_animate:hover {
+    background-color: white;
+    color: black;
 }
 
 .subtitle {
@@ -41,8 +78,14 @@
     text-align: center;
     letter-spacing: -0.5px;
     color: #fafafa;
+    text-transform: uppercase;
+    background: #191c58;
+    display: table;
+    margin: 20px auto;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
-
 
 @media screen and (max-width: 770px) {
     .title {
