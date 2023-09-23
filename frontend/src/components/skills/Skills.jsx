@@ -20,10 +20,11 @@ const Skills = () => {
       <h2>Hard Skills</h2>
       <div  className={s.skills_item}>
         {hardSkills.map((item) => (<div 
+        key={item.id} 
         data-aos='zoom-out' 
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000">
-          <HardSkills skill={item} />
+          <HardSkills skill={item.title} />
         </div>
         ))}
       </div>
@@ -31,7 +32,7 @@ const Skills = () => {
       <h2>Soft Skills</h2>
       <div  className={s.skills_item}>
         {softSkills.map((item) => (<div data-aos='fade-up' data-aos-duration="2500" key={item.id}>
-          <SoftSkills skill={item} />
+          <SoftSkills skill={item.title} />
         </div>
         ))}
       </div>

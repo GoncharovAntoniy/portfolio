@@ -13,10 +13,23 @@
     max-width: 500px;
 }
 
+.title{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    font-weight: 600;
+}
+
 .image {
     max-width: 500px;
     border-radius: 25px;
     box-shadow: 0 0 10px black  ;
+}
+
+.image:hover {
+    box-shadow: 0 0 10px 5px blue
+
 }
 
 .portfolio_link {
@@ -25,7 +38,12 @@
     gap: 15px;
     justify-content: center;
     align-items: center;
+    transition: .5s;
 }
+
+.portfolio_link:hover {
+    transform: translateY(-25px);
+} 
 
 .gihub {
     display: flex;
@@ -47,4 +65,8 @@
     .image {
         max-width: 300px;
     }
+}
+
+.projects {
+    margin-top: 20px;
 }

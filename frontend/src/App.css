@@ -2,6 +2,7 @@
   text-align: center;
   box-sizing: border-box;
   max-width: 1600px;
+  position: relative;
 }
 
 .swiper-slide-next {
@@ -16,16 +17,8 @@
 
 .entered {
   animation: rotate_image 8s infinite linear;
-  
 }
-@keyframes rotate_image {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
-}
+
 
 
 .page {
@@ -63,3 +56,5 @@
     opacity: 0;
   }
 }
+
+

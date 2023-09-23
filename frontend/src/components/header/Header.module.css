@@ -44,7 +44,39 @@
   color: #5c5f61;
 }
 
+.navbar_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
 
+.navbar_right_links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.authorisations {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.authorisations_register, .authorisations_login, .authorisations_loguot {
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.authorisations_register:hover, .authorisations_login:hover, .authorisations_loguot:hover {
+  color: #5c5f61;
+}
 
 .navbar {
   height: 50px;

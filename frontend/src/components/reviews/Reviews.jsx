@@ -10,9 +10,7 @@ import Review from "./review/Review";
 import s from "./Reviews.module.css";
 
 const Reviews = () => {
-  const swiper = useSwiper();
-  console.log(swiper);
-
+ 
   return (
     <>
       <Swiper
@@ -20,13 +18,13 @@ const Reviews = () => {
         spaceBetween={50}
         slidesPerView={3}
         centeredSlides={false}
-        onSlideChange={() => console.log("slide change")}
+        // onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => swiper}
         className={s.swiper}>
         <div className={s.reviews}>
           {datareviews.map((item) => (
-            <SwiperSlide className={s.swiperSlide}>
-              <Review {...item} key={item.id} />
+            <SwiperSlide key={item.id} className={s.swiperSlide}>
+              <Review {...item}  />
             </SwiperSlide>
           ))}
         </div>
@@ -38,13 +36,13 @@ const Reviews = () => {
         slidesPerView={1}
         centeredSlides={true}
         navigation={true}
-        onSlideChange={() => console.log("slide change")}
+        // onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => swiper}
         className={s.swiper_BP}>
         <div className={s.reviews}>
           {datareviews.map((item) => (
-            <SwiperSlide className={s.swiperSlide}>
-              <Review {...item} key={item.id} />
+            <SwiperSlide key={item.id} className={s.swiperSlide}>
+              <Review {...item}  />
             </SwiperSlide>
           ))}
         </div>

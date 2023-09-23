@@ -12,8 +12,17 @@
 .image {
     position: absolute;
     background-position: cover;
+    animation: rotate_image 8s infinite linear;
 }
 
+@keyframes rotate_image {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
 
 .infoTitle {
     display: flex;

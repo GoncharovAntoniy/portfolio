@@ -6,8 +6,9 @@ import Body from "./pages/body/Body";
 import Projects from "./pages/Projects/Projects";
 import Footer from "./components/footer/Footer";
 import Contacts from "./pages/contacts/Contacts";
-import { CSSTransition } from "react-transition-group";
+import { CSSTransition, Transition } from "react-transition-group";
 import { useEffect, useState } from "react";
+import Modal from "./components/modal/Modal";
 
 function App() {
 
@@ -16,7 +17,6 @@ function App() {
     const [prop3, setProp3] = useState(false)
 
     const location = useLocation()
-    console.log(location)
     useEffect(() => {
       location.pathname == '/' ? setProp1(true) : setProp1(false)
       location.pathname == '/projects' ? setProp2(true) : setProp2(false)
@@ -24,8 +24,10 @@ function App() {
     }, [location])
 
 
+
   return (
       <div className="App">
+        <Modal />
         <Header />
         <Routes>
           <Route
