@@ -15,7 +15,7 @@
 }
 
 
-.vk:hover, .git:hover {
+.vk:hover, .git:hover, .leetcode:hover {
     fill: green;
 }
 
